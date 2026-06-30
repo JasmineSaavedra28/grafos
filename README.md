@@ -32,14 +32,15 @@ B-D: 6       D-G: 12
 ### ¿Por qué Dijkstra?
 
 El **Algoritmo de Dijkstra** es la opción ideal cuando:
-- Se necesita encontrar el camino más corto desde un nodo origen a cualquier otro nodo
-- El grafo tiene pesos no negativos
-- El objetivo es optimizar la ruta entre dos puntos específicos
+- Se necesita encontrar el camino más corto desde un nodo origen a cualquier otro nodo.
+- El grafo tiene pesos no negativos.
+- El objetivo es optimizar la ruta entre dos puntos específicos.
 
 **Ventajas:**
-✓ Complejidad: O((V + E) log V) con heap binario  
-✓ Garantiza la solución óptima  
-✓ Proporciona el árbol de caminos más cortos desde un origen  
+
+- Complejidad: O((V + E) log V) con heap binario.  
+- Garantiza la solución óptima.  
+- Proporciona el árbol de caminos más cortos desde un origen.  
 
 ### Estructura de Datos Utilizada: Lista de Adyacencia
 
@@ -76,10 +77,10 @@ public:
 ```
 
 #### 2. Algoritmo de Dijkstra
-- **Inicialización:** Establece distancias infinitas (excepto el origen en 0)
-- **Cola de Prioridad:** Min-heap para procesar nodos por distancia mínima
-- **Relajación:** Actualiza distancias cuando se encuentra un camino más corto
-- **Reconstrucción:** Rastrea el camino mediante array de nodos previos
+- **Inicialización:** Establece distancias infinitas (excepto el origen en 0).
+- **Cola de Prioridad:** Min-heap para procesar nodos por distancia mínima.
+- **Relajación:** Actualiza distancias cuando se encuentra un camino más corto.
+- **Reconstrucción:** Rastrea el camino mediante array de nodos previos.
 
 ---
 
@@ -96,8 +97,8 @@ g++ -std=c++17 -O2 agente_ventas_dijkstra.cpp -o agente_ventas.exe
 ```
 
 **Opciones de compilación:**
-- `-std=c++17`: Usa el estándar C++17
-- `-O2`: Optimización de nivel 2 (balance entre velocidad y tiempo de compilación)
+- `-std=c++17`: Usa el estándar C++17.
+- `-O2`: Optimización de nivel 2 (balance entre velocidad y tiempo de compilación).
 
 ### Ejecución
 
@@ -198,8 +199,8 @@ Edita las líneas de `agregarArista()` en la función `main()` con los nuevos va
 | **Total** | **O((V + E) log V)** |
 
 Donde:
-- V = número de vértices (8 ciudades)
-- E = número de aristas (conexiones entre ciudades)
+- V = número de vértices (8 ciudades).
+- E = número de aristas (conexiones entre ciudades).
 
 ### Validaciones del Programa
 
@@ -212,10 +213,10 @@ Donde:
 
 ## 📝 Notas Adicionales
 
-- El grafo es **no dirigido**: cada arista funciona en ambas direcciones
-- Se utiliza `INT_MAX` para representar distancias infinitas (nodos inalcanzables)
-- La cola de prioridad asegura que se procesen primero los nodos con menor distancia
-- El array `previo[]` permite reconstruir el camino completo, no solo la distancia
+- El grafo es **no dirigido**: cada arista funciona en ambas direcciones.
+- Se utiliza `INT_MAX` para representar distancias infinitas (nodos inalcanzables).
+- La cola de prioridad asegura que se procesen primero los nodos con menor distancia.
+- El array `previo[]` permite reconstruir el camino completo, no solo la distancia.
 
 ---
 
