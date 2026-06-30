@@ -145,8 +145,7 @@ H       13         A -> B -> G -> (alt)
 
 ```
 grafos/
-├── agente_ventas_dijkstra.cpp    # Código fuente principal
-├── agente_ventas.exe             # Ejecutable compilado
+├── agente_ventas_dijkstra.cpp    # Código fuente principal            
 └── README.md                      # Este archivo
 ```
 
